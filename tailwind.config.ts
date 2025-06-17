@@ -19,6 +19,17 @@ export default {
 			}
 		},
 		extend: {
+    colors: {
+      primary: '#2C7865',
+      secondary: '#2E8BC0',
+      background: '#F7FAFC',
+      text: '#1A202C',
+      cta: '#FFD93D',
+      hover: '#F4A261',
+    },
+    fontFamily: {
+      poppins: ['Poppins', 'sans-serif'],
+    },
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
 			},
