@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md fixed w-full top-0 z-50">
+    <nav className="bg-primary shadow-md fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -24,7 +24,7 @@ const Navbar = () => {
               alt="Logo Sekolah Islam Nurul Yaqin"
               className="h-10 w-auto mr-3 rounded-full"
             />
-            <span className="font-bold text-xl text-islamic-green-700">
+            <span className="font-bold text-xl text-cta">
               Nurul Yaqin
             </span>
           </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="font-poppins text-gray-700 hover:text-islamic-green-600 px-3 py-2 text-sm font-medium transition duration-300 hover:scale-105"
+                  className="font-poppins text-white hover:text-cta px-3 py-2 text-sm font-medium transition duration-300 hover:scale-105"
                 >
                   {item.label}
                 </a>
@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-islamic-green-600 focus:outline-none"
+              className="text-white hover:text-cta focus:outline-none"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -58,13 +58,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-primary border-t">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {menuItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="font-poppins text-gray-700 hover:text-islamic-green-600 block px-3 py-2 text-base font-medium transition duration-300"
+                className="font-poppins text-white hover:text-cta block px-3 py-2 text-base font-medium transition duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
