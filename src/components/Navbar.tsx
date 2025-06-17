@@ -24,7 +24,9 @@ const Navbar = () => {
               alt="Logo Sekolah Islam Nurul Yaqin"
               className="h-10 w-auto mr-3 rounded-full"
             />
-            <span className="font-bold text-xl text-islamic-green-700">Nurul Yaqin</span>
+            <span className="font-bold text-xl text-islamic-green-700">
+              Nurul Yaqin
+            </span>
           </div>
 
           {/* Desktop Menu */}
