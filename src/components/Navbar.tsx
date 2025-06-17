@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -20,13 +19,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-          <img src="/logo-nurulyaqin.jpeg"
-               alt="Logo Sekolah Islam Nurul Yaqin"
-        className="h-10 w-auto mr-3 rounded-full"
-          />
-         <span className="font-bold text-xl text-islamic-green-700">Nurul Yaqin</span>
-          </div>
-
+            <img
+              src="/logo-nurulyaqin.jpeg"
+              alt="Logo Sekolah Islam Nurul Yaqin"
+              className="h-10 w-auto mr-3 rounded-full"
+            />
+            <span className="font-bold text-xl text-islamic-green-700">Nurul Yaqin</span>
           </div>
 
           {/* Desktop Menu */}
@@ -54,6 +52,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+      </div>
 
       {/* Mobile Menu */}
       {isOpen && (
