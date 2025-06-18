@@ -6,12 +6,41 @@ media_folder: "public/uploads"
 public_folder: "/uploads"
 
 collections:
+  - name: "profil"
+    label: "Profil Sekolah"
+    files:
+      - label: "Tentang Kami"
+        name: "tentang"
+        file: "content/profil/tentang.md"
+        fields:
+          - { label: "Judul", name: "title", widget: "string" }
+          - { label: "Isi", name: "body", widget: "markdown" }
+
+  - name: "program"
+    label: "Program Sekolah"
+    folder: "content/program"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nama Program", name: "title", widget: "string" }
+      - { label: "Deskripsi", name: "body", widget: "markdown" }
+
   - name: "berita"
-    label: "Berita Sekolah"
+    label: "Berita & Pengumuman"
     folder: "content/berita"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Judul", name: "title", widget: "string"}
-      - {label: "Tanggal", name: "date", widget: "datetime"}
-      - {label: "Isi", name: "body", widget: "markdown"}
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime" }
+      - { label: "Isi", name: "body", widget: "markdown" }
+
+  - name: "pendaftaran"
+    label: "Info Pendaftaran"
+    files:
+      - label: "Alur & Syarat"
+        name: "alur"
+        file: "content/pendaftaran/alur.md"
+        fields:
+          - { label: "Judul", name: "title", widget: "string" }
+          - { label: "Isi", name: "body", widget: "markdown" }
